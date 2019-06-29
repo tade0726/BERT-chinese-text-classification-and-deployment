@@ -1,4 +1,5 @@
-![ZlmrVg.th.png](https://s2.ax1x.com/2019/06/29/ZlmrVg.th.png)## 简单高效的Bert中文文本分类模型开发和部署
+## 简单高效的Bert中文文本分类模型开发和部署
+![ZlmrVg.png](https://s2.ax1x.com/2019/06/29/ZlmrVg.png)
 
 ### 准备环境工作
 
