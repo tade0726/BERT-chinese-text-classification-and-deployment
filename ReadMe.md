@@ -134,4 +134,4 @@ simple_tensorflow_serving --model_base_path="./api"
 - [ ] 微信端交互代码
 
 ### Buy me a cup of coffe 
-![赞赏](https://i.loli.net/2019/06/29/5d1758dbb97cd22976.png)
+![赞赏](https://s2.ax1x.com/2019/06/29/ZleBN9.md.png)
