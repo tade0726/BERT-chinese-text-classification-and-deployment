@@ -18,6 +18,7 @@ WORKDIR $work_space
 ADD ./src ./src
 WORKDIR $work_space/src
 RUN pip install -r requirements.txt
+ADD data $bert_data
 # env
 ENV BERT_BASE_DIR=$bert_models/chinese_L-12_H-768_A-12 
 ENV GLUE_DIR=$bert_data 
