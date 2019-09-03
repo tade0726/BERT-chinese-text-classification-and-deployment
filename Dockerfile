@@ -10,7 +10,7 @@ WORKDIR $work_space
 WORKDIR $bert
 WORKDIR $bert_data
 WORKDIR $bert_output
-WORKDIR $bert_models
+WORKDIR $bert_init_models
 # download bert pretrain model
 RUN curl -O https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip && unzip chinese_L-12_H-768_A-12.zip && rm chinese_L-12_H-768_A-12.zip
 # install vim
