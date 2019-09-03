@@ -32,5 +32,8 @@ docker login
 docker pull teddy913/bert_train
 
 # run docker 
-docker run --name train_ins_1 --gpus all -d -v /data/Bert/output:/root/Bert/output teddy913/bert_train bash -c "sh train.sh"
+docker run --name train_ins_1 --gpus all -d --rm\
+    -v /data/Bert/output:/root/Bert/output\
+    -e TRAIN_BATCH_SIZE=32\
+    teddy913/bert_train bash -c "sh train.sh"
 ```
