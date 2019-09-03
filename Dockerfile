@@ -1,4 +1,10 @@
 FROM tensorflow/tensorflow:1.13.1-gpu-py3
+# train paramter
+ARG max_seq_length = 128
+ARG train_batch_size = 4
+ARG learning_rate = 2e-5
+ARG num_train_epochs = 7.0
+
 # define path 
 ARG bert_data="/root/Bert/data"
 ARG bert_output="/root/Bert/output"
@@ -27,3 +33,9 @@ ENV BERT_DATA=$bert_data
 ENV MODEL_PB_DIR=$bert/api/
 ENV MODEL_DIR=$bert_output
 ENV OUTPUT_DIR=$bert_output
+
+## env for train parameters
+ENV MAX_SEQ_LENGTH = $max_seq_length
+ENV TRAIN_BATCH_SIZE = $train_batch_size
+ENV LEARNING_RATE = $learning_rate
+ENV NUM_TRAIN_EPOCHS = $num_train_epochs
