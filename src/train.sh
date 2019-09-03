@@ -4,7 +4,7 @@ python classifier.py \
   --task_name=setiment \
   --do_train=true \
   --do_eval=true \
-  --data_dir=$GLUE_DIR/ \
+  --data_dir=$GLUE_DIR \
   --vocab_file=$BERT_BASE_DIR/vocab.txt \
   --bert_config_file=$BERT_BASE_DIR/bert_config.json \
   --init_checkpoint=$BERT_BASE_DIR/bert_model.ckpt \
@@ -12,4 +12,4 @@ python classifier.py \
   --train_batch_size=4 \
   --learning_rate=2e-5 \
   --num_train_epochs=5.0 \
-  --output_dir=$OUTPUT_DIR/
+  --output_dir=$OUTPUT_DIR

@@ -1,10 +1,10 @@
 FROM tensorflow/tensorflow:1.13.1-gpu-py3
 # define path 
-ARG bert_data='/root/Bert/data'
-ARG bert_output='/root/Bert/output'
-ARG bert_models='/root/Bert/models'
-ARG bert='/root/Bert'
-ARG work_space='/root/work'
+ARG bert_data="/root/Bert/data"
+ARG bert_output="/root/Bert/output"
+ARG bert_models="/root/Bert/models"
+ARG bert="/root/Bert"
+ARG work_space="/root/work"
 # mkdir
 WORKDIR $work_space
 WORKDIR $bert
@@ -24,3 +24,4 @@ ENV BERT_BASE_DIR=$bert_models/chinese_L-12_H-768_A-12
 ENV GLUE_DIR=$bert_data 
 ENV MODEL_DIR=$bert_output 
 ENV MODEL_PB_DIR=$bert/api/
+ENV OUTPUT_DIR=$bert_output
