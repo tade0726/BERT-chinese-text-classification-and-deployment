@@ -3,7 +3,7 @@ mkdir output
 
 ## export for dor
 export BERT_BASE_DIR=$(pwd)/chinese_L-12_H-768_A-12 
-export BERT_DATA=$(pwd) 
+export BERT_DATA=$(pwd)/data
 export MODEL_PB_DIR=$(pwd)/api/
 export MODEL_DIR=$(pwd)/output
 export OUTPUT_DIR=$(pwd)/output
