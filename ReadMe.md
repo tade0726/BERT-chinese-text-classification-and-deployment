@@ -123,6 +123,11 @@ simple_tensorflow_serving --model_base_path="./api"
 
 ![Exkyz4.png](https://s2.ax1x.com/2019/05/20/Exkyz4.png)
 
+
+### Docker 化
+
+原本来的代码结构基本保留在 src 中，docker 镜像的说明参考 [docker_deploy.md]([docker_deploy.md])
+
 ### 问题解答
 
 - 训练的显存不足怎么办
@@ -131,7 +136,7 @@ simple_tensorflow_serving --model_base_path="./api"
 
 ### TODO LIST
 
-- [ ] 接入Docker
+- [x] 接入Docker
 - [ ] 微信端交互代码
 
 ### Buy me a cup of coffe 
